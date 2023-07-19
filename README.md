@@ -4,6 +4,8 @@ PHP development environment with Linux, Apache, mySQL and PHP (LAMP) to use as a
 
 Makefile provides you some cool short commands to work much faster. Have a look to it, very nice ;-)
 
+`make start` brings everything up and running. If you change the php Dockerfile, run `make build` instead to build the docker image again with your changes.
+
 `make shell` opens up a shell inside the PHP container. There you can run `composer` for example.
 
 ## Versions
