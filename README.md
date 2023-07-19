@@ -14,6 +14,53 @@ MySQL 8
 
 adminer 4
 
+### PHP Extensions
+
+[PHP Modules]
+Core
+ctype
+curl
+date
+dom
+fileinfo
+filter
+ftp
+gd
+hash
+iconv
+json
+libxml
+mbstring
+memcached
+mysqli
+mysqlnd
+openssl
+pcre
+PDO
+pdo_mysql
+pdo_sqlite
+Phar
+posix
+random
+readline
+redis
+Reflection
+session
+SimpleXML
+sodium
+SPL
+sqlite3
+standard
+tokenizer
+xdebug
+xml
+xmlreader
+xmlwriter
+zlib
+
+[Zend Modules]
+Xdebug
+
 ## URLs
 
 ### Webroot
