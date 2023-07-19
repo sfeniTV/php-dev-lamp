@@ -1,18 +1,13 @@
 version: '3'
 
 services:
-  webserver:
-    image: nginx:1.25
-    volumes:
-      - ./.docker/nginx/:/etc/nginx/conf.d/
-      - ./public:/usr/share/nginx/html
-    ports:
-      - 8080:80
-  php-fpm:
+  php:
     build:
       context: .docker/php/
     volumes:
-      - ./public:/usr/share/nginx/html
+      - ./public:/var/www/html
+    ports:
+      - 8080:80
   database:
     image: mysql:8
     environment:
