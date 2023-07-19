@@ -14,3 +14,6 @@ start-background:
 
 logs:
 	docker-compose logs
+
+shell:
+	docker-compose exec php bash
