@@ -4,6 +4,8 @@ PHP development environment with Linux, Apache, mySQL and PHP (LAMP) to use as a
 
 Makefile provides you some cool short commands to work much faster. Have a look to it, very nice ;-)
 
+`make shell` opens up a shell inside the PHP container. There you can run `composer` for example.
+
 ## Versions
 
 Apache 2.4

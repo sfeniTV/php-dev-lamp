@@ -17,3 +17,9 @@ logs:
 
 shell:
 	docker-compose exec php bash
+
+composer-install:
+	docker-compose exec php composer install
+
+composer-update:
+	docker-compose exec php composer update
