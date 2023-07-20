@@ -1,4 +1,4 @@
-.PHONY: start build stop start-background logs
+.PHONY: start build stop start-background logs shell composer-install composer-update fix-permissions install-symfony install-typo3 install-wordpress
 
 start:
 	docker-compose up
