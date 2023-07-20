@@ -67,9 +67,9 @@ Xdebug
 
 ## URLs
 
-### Webroot
+### Webroot / DocumentRoot
 
-Directory: public/
+Directory: app/public/
 
 http://localhost:8080
 
@@ -85,5 +85,9 @@ user: root
 password: 123
 
 database name for your app not defined / created yet. Good luck ;-)
+
+## Framework Installations
+
+Symfony: `make install-symfony`
 
 HAPPY CODING!!!
