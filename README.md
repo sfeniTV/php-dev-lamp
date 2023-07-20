@@ -88,6 +88,10 @@ database name for your app not defined / created yet. Good luck ;-)
 
 ## Framework Installations
 
+*WARNING* Commands will overwrite files and directories in app/public/ So just use it as jump-start at the beginning of a project!
+
 Symfony: `make install-symfony`
+
+TYPO3: `make install-typo3` and open http://localhost:8080/ to start installation wizard
 
 HAPPY CODING!!!

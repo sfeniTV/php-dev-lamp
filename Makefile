@@ -24,11 +24,24 @@ composer-install:
 composer-update:
 	docker-compose exec php composer update
 
+fix-permissions:
+	docker-compose exec php bash -c "chmod a+w -R ."
+
 install-symfony:
-	docker-compose exec php composer create-project symfony/skeleton /var/www/html/app  --no-interaction
-	docker-compose exec php bash -c "mv -f /var/www/html/app/public/* /var/www/html/public/"
-	docker-compose exec php bash -c "rm -Rf /var/www/html/app/public/"
-	docker-compose exec php bash -c "mv /var/www/html/app/* /var/www/html/"
-	docker-compose exec php bash -c "mv /var/www/html/app/.* /var/www/html/"
-	docker-compose exec php bash -c "rm -Rf /var/www/html/app/"
+	docker-compose exec php composer create-project symfony/skeleton /var/www/html/symfony-app  --no-interaction
+	docker-compose exec php bash -c "mv -f /var/www/html/symfony-app/public/* /var/www/html/public/"
+	docker-compose exec php bash -c "rm -Rf /var/www/html/symfony-app/public/"
+	docker-compose exec php bash -c "mv /var/www/html/symfony-app/* /var/www/html/"
+	docker-compose exec php bash -c "mv /var/www/html/symfony-app/.* /var/www/html/"
+	docker-compose exec php bash -c "rm -Rf /var/www/html/symfony-app/"
+	docker-compose exec php bash -c "chmod a+w -R ."
+
+install-typo3:
+	docker-compose exec php composer create-project typo3/cms-base-distribution /var/www/html/typo3-app "^12"
+	docker-compose exec php bash -c "mv -f /var/www/html/typo3-app/public/* /var/www/html/public/"
+	docker-compose exec php bash -c "rm -Rf /var/www/html/typo3-app/public/"
+	docker-compose exec php bash -c "mv /var/www/html/typo3-app/* /var/www/html/"
+	docker-compose exec php bash -c "mv /var/www/html/typo3-app/.* /var/www/html/"
+	docker-compose exec php bash -c "rm -Rf /var/www/html/typo3-app/"
+	docker-compose exec php bash -c "touch /var/www/html/public/FIRST_INSTALL"
 	docker-compose exec php bash -c "chmod a+w -R ."
