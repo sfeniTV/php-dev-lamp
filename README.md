@@ -8,6 +8,13 @@ Makefile provides you some cool short commands to work much faster. Also there a
 
 `make shell` opens up a shell inside the PHP container. There you can run `composer` for example.
 
+## system requirements
+
+* docker
+* docker-compose
+* make
+* some IDE ;-)
+
 ## Versions
 
 Apache 2.4
