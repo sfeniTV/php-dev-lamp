@@ -94,4 +94,6 @@ Symfony: `make install-symfony`
 
 TYPO3: `make install-typo3` and open http://localhost:8080/ to start installation wizard
 
+Wordpress: `make install-wordpress` and open http://localhost:8080/ to start installation wizard
+
 HAPPY CODING!!!
