@@ -2,7 +2,7 @@
 
 PHP development environment with Linux, Apache, mySQL and PHP (LAMP) to use as a quick-start template. Shipped with the lilghtweight db-admin tool called Adminer.
 
-Makefile provides you some cool short commands to work much faster. Have a look to it, very nice ;-)
+Makefile provides you some cool short commands to work much faster. Also there are installation commands for well known PHP frameworks. Have a look to it, very nice ;-)
 
 `make start` brings everything up and running. If you change the php Dockerfile, run `make build` instead to build the docker image again with your changes.
 
