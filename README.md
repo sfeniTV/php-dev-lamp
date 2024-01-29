@@ -4,7 +4,7 @@ PHP development environment with Linux, Apache, mySQL and PHP (LAMP) to use as a
 
 Makefile provides you some cool short commands to work much faster. Also there are installation commands for well known PHP frameworks. Have a look at it, very nice ;-)
 
-`make start` brings everything up and running. If you change the php Dockerfile, run `make build` instead to build the docker image again with your changes.
+`make start` brings everything up and running.
 
 `make shell` opens up a shell inside the PHP container. There you can run `composer` for example.
 
@@ -104,3 +104,9 @@ TYPO3: `make install-typo3` and open http://localhost:8080/ to start installatio
 Wordpress: `make install-wordpress` and open http://localhost:8080/ to start installation wizard
 
 HAPPY CODING!!!
+
+## Customized PHP Image
+
+If you change the php image and create your own Dockerfile. Please configure it correctly in docker-compose.yaml, run `make build` instead to build the docker image again with your changes.
+
+You can use the image from docker-compose.yaml as your FROM inside the Dockerfile. So you don't need to start from scratch.

@@ -2,11 +2,10 @@ version: '3'
 
 services:
   php:
-    build:
-      context: .docker/php/
+    image: ghcr.io/sfenitv/container-images/php:v0.0.3
     volumes:
       - ./app:/var/www/html
-      - ./.docker/php/php.ini:/usr/local/etc/php/conf.d/zzz-app.ini
+      - ./php.ini:/usr/local/etc/php/conf.d/zzz-app.ini
     ports:
       - 8080:80
   database:
