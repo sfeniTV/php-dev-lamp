@@ -11,15 +11,20 @@ services:
   database:
     image: mysql:8
     environment:
-      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: app
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: pwd123
     volumes:
       - database-data:/var/lib/mysql
-  adminer:
-    image: adminer:4
+  phpmyadmin:
+    image: phpmyadmin:5-apache
     environment:
-      ADMINER_DEFAULT_SERVER: database
+      PMA_HOST: database
+      PMA_USER: myuser
+      PMA_PASSWORD: pwd123
     ports:
-      - 8088:8080
+      - 8088:80
 
 volumes:
   database-data: ~

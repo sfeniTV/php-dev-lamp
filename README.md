@@ -1,6 +1,6 @@
 # PHP Dev with Classic LAMP Stack
 
-PHP development environment with Linux, Apache, mySQL and PHP (LAMP) to use as a quick-start template. Shipped with the lilghtweight db-admin tool called Adminer.
+PHP development environment with Linux, Apache, mySQL and PHP (LAMP) to use as a quick-start template. Shipped with the db-admin tool called phpMyAdmin.
 
 Makefile provides you some cool short commands to work much faster. Also there are installation commands for well known PHP frameworks. Have a look at it, very nice ;-)
 
@@ -23,7 +23,7 @@ PHP 8.2
 
 MySQL 8
 
-adminer 4
+phpMyAdmin 5
 
 ### PHP Extensions
 
@@ -80,7 +80,7 @@ Directory: app/public/
 
 http://localhost:8080
 
-### Adminer / Database Administration
+### phpMyAdmin / Database Administration
 http://localhost:8088
 
 ### Database credentials
