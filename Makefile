@@ -33,6 +33,8 @@ cleanup-app:
 	docker compose exec php bash -c "rm -Rf /var/www/html/src"
 	docker compose exec php bash -c "rm -Rf /var/www/html/vendor"
 	docker compose exec php bash -c "rm -f /var/www/html/composer.json"
+	docker compose exec php bash -c "rm -f /var/www/html/composer.lock"
+	docker compose exec php bash -c "rm -f /var/www/html/.gitignore"
 
 install-app-symfony:
 	docker compose exec php composer create-project symfony/skeleton /var/www/html/symfony-app  --no-interaction
