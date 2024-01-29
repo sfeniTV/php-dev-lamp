@@ -8,6 +8,8 @@ Makefile provides you some cool short commands to work much faster. Also there a
 
 `make shell` opens up a shell inside the PHP container. There you can run `composer` for example.
 
+Start coding inside src/ and only move things to public/ if you really need them public accessible. Think about that when you deploy you app at a hosting provider. Configure your webroot /documentroot to this public/ folder only!
+
 ## system requirements
 
 * docker
