@@ -2,7 +2,7 @@ version: '3'
 
 services:
   php:
-    image: ghcr.io/sfenitv/container-images/php:v0.0.3
+    image: ghcr.io/sfenitv/container-images/php:v0.0.4
     volumes:
       - ./app:/var/www/html
       - ./php.ini:/usr/local/etc/php/conf.d/zzz-app.ini
