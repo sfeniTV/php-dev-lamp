@@ -24,9 +24,6 @@ composer-install:
 composer-update:
 	docker compose exec php composer update
 
-fix-permissions:
-	docker compose exec php bash -c "chmod a+w -R ."
-
 install-symfony:
 	docker compose exec php composer create-project symfony/skeleton /var/www/html/symfony-app  --no-interaction
 	docker compose exec php bash -c "mv -f /var/www/html/symfony-app/public/* /var/www/html/public/"
